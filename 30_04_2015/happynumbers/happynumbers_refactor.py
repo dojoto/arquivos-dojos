@@ -5,7 +5,6 @@ def soma_dos_quadrados(numero):
         list.append(int(digito) ** 2)
     return sum(list)
 
-
 def happy(numero):
     result = numero
     box = []
@@ -22,5 +21,5 @@ lista = [1, 7, 10, 13, 19, 23, 28, 31, 32, 44, 49, 68, 70, 79, 82, 86, 91, 94, 9
 numeros = range(lista[-1])
 nao_felizes = [n for n in numeros if n not in lista]
 
-assert all([happy2(num) for num in lista])
-assert not all([happy2(num) for num in nao_felizes])
+assert all([happy(num) for num in lista])
+assert not all([happy(num) for num in nao_felizes])
